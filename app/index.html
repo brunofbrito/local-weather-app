@@ -15,6 +15,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -22,24 +23,32 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div class="wrapper">
+      <div class="temp-display">
+        <p id="description"></p>
+        <p id="temperature"></p>
+        <p class="location">In <span id="city"></span></p>
+      </div>
+    </div>
 
-    <section>
-      <h1 id="city">Local Weather App</h1>      
-      <p><a id="temperature" href="#" onclick="switchUnits(); return false;" title="Click to switch between metric and imperial units"></a><span id="weather">by Bruno Brito</span></p>
+    <!-- <section>
+      <h1 id="city"></h1>     
+      <p id="ip"></p>
+      <p><img id="weather-icon" /></p>
     </section>
+   
+   </div>
 
     <footer>
       <p>A <em>mashup</em> powered by 3 APIs: <a href="http://flickr.com/services/api/" target="_blank">Flickr</a>, <a href="http://openweathermap.org" target="_blank">Openweathermap.org</a> and <a href="http://smart-ip.net" target="_blank">Smart-IP.net</a>.</p>
       <p><a id="image-source" href="#">Image source</a></p>
-    </footer>
+    </footer> -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-    
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
